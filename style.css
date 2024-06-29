@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root{
+    /*colors*/
+    --primary-color:#9400FF;
+    --secondary-color:#AED2FF;
+    --bg-dark-color: #27005D;
+    --bg-light-color: #F4F4F4;
+    --just-white: #fff;
+    --just-black: #000;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+
+    /*fonts*/
+    --roboto: 'Roboto', sans-serif;
+    --kanit: 'Kanit', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: var(--roboto);
+    background-color: var(--bg-dark-color);
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header{
+    
+}
+
+.banner{
+    width: 100%;
+    height: 80px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+    align-items: center;
+}
+
+.banner h1{
+    font-family: var(--kanit);
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.3rem; // 16px * 1.1 = 17.6px
+    lettwr-spacing: 2px;
+    text-align: center;
+    border: 2px solid var(--text-color);
+    padding: 3px;
+}
+
+.banner-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner .banner__button{
+    font-family: var(--kanit);
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: var(--just-white);
+}
+
+.banner-group button svg{
+    transition: all 0.2s ease-in-out;
+}
+
+.banner-group button svg:hover{
+    fill: var(--just-white);
+    transform: scale(1.1);
+}
+
+.banner-group button svg:active{
+    transform: scale(1) rotate(25deg);
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 340px;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card__bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+

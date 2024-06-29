@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Maqueta Web</title>
+</head>
+<body>
+    <header class="header"  x-data="{ open: true }">
+        <div class="banner" x-show="open">
+            <h1>MW<br>4.0</h1>
+
+            <p>
+                Inscribite al curso de maquetado web 4.0
+            </p>
+
+            <div class="banner-group">
+                <a target="_blank" href="https://www.aikodev.com/apply">
+                    <button class="banner__button">
+                        Aplicar
+                    </button>
+                </a>
+                <button
+                    x-on:click="open = false"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="card">
+            <img class="card__bg" src="./assets/images/maquetado-girl.jpg" alt="">
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
